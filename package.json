@@ -1,0 +1,23 @@
+{
+  "name": "overseer",
+  "version": "0.0.1",
+  "description": "Overseer will watch over your architecture and app layers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "clean",
+    "architecture",
+    "layers",
+    "architecture"
+  ],
+  "author": "Ivan Gerasin",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  }
+}
