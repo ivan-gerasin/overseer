@@ -1,4 +1,5 @@
-import {AppLayers, Filename, ModuleMatcher} from "./types";
+import {AppLayers, ModuleMatcher} from "./types";
+import {Filename} from "./interfaces/ISrcFile";
 
 
 export function getMatchers(layers: AppLayers): ModuleMatcher[] {

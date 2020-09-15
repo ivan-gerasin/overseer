@@ -1,5 +1,5 @@
 import {IMatcher} from "../interfaces/IMatcher";
-import {Filename} from "../types";
+import {Filename} from "../interfaces/ISrcFile";
 
 export default class Matcher implements IMatcher {
   public readonly matchers: RegExp[]

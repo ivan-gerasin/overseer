@@ -2,7 +2,7 @@ import {ILayer, LayerLevel} from "../interfaces/ILayer";
 import {IModule} from "../interfaces/IModule";
 import {IConfigLayer} from "../interfaces/IConfig";
 import {Module} from "./module";
-import {Filename} from "../types";
+import {Filename} from "../interfaces/ISrcFile";
 
 export default class Layer implements ILayer {
   constructor(

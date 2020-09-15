@@ -1,12 +1,12 @@
-import IFile, {Filename} from "../interfaces/IFile";
+import ISrcFile, {Filename} from "../interfaces/ISrcFile";
 import {LayerLevel} from "../interfaces/ILayer";
 
-export default class File implements IFile {
+export default class SrcFile implements ISrcFile {
   constructor(readonly name: Filename, readonly level: LayerLevel) {}
-  canImportFile(file: IFile): boolean {
+  canImportFile(file: ISrcFile): boolean {
     return this.level === file.level || this.level > file.level
   }
-  canBeExporterBy(file: IFile): boolean {
+  canBeExporterBy(file: ISrcFile): boolean {
     return this.level === file.level || this.level < file.level
   }
 }
