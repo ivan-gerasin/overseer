@@ -1,5 +1,8 @@
 import {ILayer, LayerLevel} from "../interfaces/iLayer";
 import {IModule} from "../interfaces/iModule";
+import {IConfigLayer} from "../interfaces/iConfig";
+import {Module} from "./module";
+import {Filename} from "../types";
 
 export default class Layer implements ILayer {
   constructor(
@@ -8,13 +11,14 @@ export default class Layer implements ILayer {
     public readonly level: LayerLevel
   ) {}
 
-  isFilenameFromLayer(fname: string): boolean {
-    const isBelongsToModule = (module: IModule) => module.isFilenameFromModule(fname)
-    return this.modules.some(isBelongsToModule)
+  static fromConfig(rawLayer: IConfigLayer, level: LayerLevel): Layer {
+    const modules = rawLayer.modules.map(rawModule => Module.fromConfig(rawModule))
+    return new Layer(rawLayer.name, modules, level)
   }
 
-  isModuleFromLayer(module: IModule): boolean {
-    return this.modules.includes(module)
+  isFilenameFromLayer(fname: Filename): boolean {
+    const isBelongsToModule = (module: IModule) => module.isFilenameFromModule(fname)
+    return this.modules.some(isBelongsToModule)
   }
 
   isInnerLayer(layer: ILayer): boolean {
