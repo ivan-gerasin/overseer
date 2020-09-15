@@ -4,7 +4,7 @@
   "description": "Overseer will watch over your architecture and app layers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "clean",
@@ -15,9 +15,16 @@
   "author": "Ivan Gerasin",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel": "^6.23.0",
+    "babel-jest": "^26.3.0",
     "typescript": "^4.0.2"
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.1"
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2"
   }
 }
