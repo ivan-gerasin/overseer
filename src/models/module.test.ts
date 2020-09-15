@@ -1,4 +1,4 @@
-import {IConfigModule} from "../interfaces/iConfig";
+import {IConfigModule} from "../interfaces/IConfig";
 import {Module} from "./module";
 import Matcher from "./matcher";
 

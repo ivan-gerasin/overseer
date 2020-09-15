@@ -1,4 +1,4 @@
-import {IConfigLayer} from "../interfaces/iConfig";
+import {IConfigLayer} from "../interfaces/IConfig";
 import Layer from "./layer";
 
 describe('Layer', () => {

@@ -1,5 +1,5 @@
 import Layer from "../models/layer";
-import {IConfigLayer, IConfigModule, IOverseerConfig} from "../interfaces/iConfig";
+import {IConfigLayer, IConfigModule, IOverseerConfig} from "../interfaces/IConfig";
 import {Module} from "../models/module";
 import Matcher from "../models/matcher";
 

@@ -1,6 +1,6 @@
 import {IMatcher} from "../interfaces/IMatcher";
-import {IModule} from "../interfaces/iModule";
-import {IConfigModule} from "../interfaces/iConfig";
+import {IModule} from "../interfaces/IModule";
+import {IConfigModule} from "../interfaces/IConfig";
 import Matcher from "./matcher";
 
 export class Module implements IModule {

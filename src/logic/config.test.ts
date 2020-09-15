@@ -1,4 +1,4 @@
-import {IOverseerConfig} from "../interfaces/iConfig";
+import {IOverseerConfig} from "../interfaces/IConfig";
 import {moduleFromConfig} from "./config";
 
 describe('Config logic', () => {

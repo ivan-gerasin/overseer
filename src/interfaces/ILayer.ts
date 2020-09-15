@@ -1,5 +1,3 @@
-import {IModule} from "./iModule";
-
 export type LayerLevel = number
 export interface ILayer {
   name: string

@@ -1,6 +1,6 @@
-import {ILayer, LayerLevel} from "../interfaces/iLayer";
-import {IModule} from "../interfaces/iModule";
-import {IConfigLayer} from "../interfaces/iConfig";
+import {ILayer, LayerLevel} from "../interfaces/ILayer";
+import {IModule} from "../interfaces/IModule";
+import {IConfigLayer} from "../interfaces/IConfig";
 import {Module} from "./module";
 import {Filename} from "../types";
 
